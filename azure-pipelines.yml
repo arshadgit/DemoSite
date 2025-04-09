@@ -10,8 +10,8 @@ pool: default
 
 steps:
 - task: Maven@3
-  displayName: Maven Build
+  displayName: Maven Test
   inputs:
     mavenPomFile: 'pom.xml'
-    goals: 'package'
+    goals: 'test'
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
